@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="firepig.starena" >
+
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" />
+
+    <application
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:logo="@drawable/logo">
+        <activity
+            android:name="firepig.starena.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="firepig.starena.SinglePlayer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="firepig.starena.MultiPlayer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="firepig.starena.HowToPlay"
+            android:label="@string/title_activity_how_to_play"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="firepig.starena.HighScore"
+            android:label="@string/title_activity_high_score"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="firepig.starena.LoadingScreen"
+            android:label="@string/title_activity_loading_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
